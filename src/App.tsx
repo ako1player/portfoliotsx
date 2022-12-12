@@ -1,6 +1,7 @@
 import {BsFillMoonStarsFill} from "react-icons/bs";
 import { AiFillLinkedin, AiOutlineGithub, AiOutlineLink} from "react-icons/ai";
 import { useState } from 'react';
+import { Contact } from "./Contact";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
             </div>
           </div>
         </div>
+        <Contact />
       </div>{/*End Main div*/}
       <footer className={ darkMode? "dark p-4 bg-gray-800 md:flex md:items-center md:justify-between md:p-6" :"p-4 bg-gray-200 md:flex md:items-center md:justify-between md:p-6"}>
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="/" className="hover:underline">Adrian Garcia Rios™</a>. All Rights Reserved.
