@@ -1,7 +1,9 @@
 import {BsFillMoonStarsFill} from "react-icons/bs";
-import { AiFillLinkedin, AiOutlineGithub, AiOutlineLink} from "react-icons/ai";
+import { AiFillLinkedin, AiOutlineGithub} from "react-icons/ai";
 import { useState } from 'react';
 import { Contact } from "./Contact";
+import ProjectList from "./pages/ProjectList";
+import projects from "./pages/projects";
 
 function App() {
 
@@ -32,32 +34,15 @@ function App() {
         <div className='relative mx-auto bg-gradient-to-b from-blue-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <img src="../images/snapchatpic-removebg-preview.png" alt="Adrian Profile"/>
         </div>
-        <div className="p-4">
+        <div className="p-4">{/*Project div*/}
           <div>
             <h3 className='text-3xl py-1 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-500'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>School/Personal</p>
           </div>
           <div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <h3 className='text-xl'>Zukowski Inventory</h3>
-              <p className='py-2'>Website for our capstone client to store inventory online. Hosted on Vercel and Heroku.</p>
-              <p>React | Node | Express | ClearDB MySQL | Tailwind </p>
-              <a href='https://test-inventory-client.vercel.app/' target="_blank" rel="noreferrer" className='flex justify-center no-underline'><p className='text-blue-500'>Link</p><AiOutlineLink className='text-blue-500'/></a>
-            </div>
+            <ProjectList projectList={projects} />
           </div>
-          <div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <h3></h3>
-              <p className='py-2'></p>
-            </div>
-          </div>
-          <div>
-            <div className='text-center shadow-lg p-10 rounded-xl'>
-              <h3></h3>
-              <p className='py-2'></p>
-            </div>
-          </div>
-        </div>
+        </div>{/*End Project div*/}
         <Contact />
       </div>{/*End Main div*/}
       <footer className={ darkMode? "dark p-4 bg-gray-800 md:flex md:items-center md:justify-between md:p-6" :"p-4 bg-gray-200 md:flex md:items-center md:justify-between md:p-6"}>
