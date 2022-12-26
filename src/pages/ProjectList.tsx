@@ -8,7 +8,7 @@ const ProjectList = ({projectList}: any) =>{
                <h3 className='text-xl'>{project.name}</h3>
                <p className='py-2'>{project.description}</p>
                <p>{project.lang}</p>
-               <a href={project.link} target="_blank" rel="noreferrer" className='flex justify-center no-underline'><p className='text-blue-500'>Link</p><AiOutlineLink className='text-blue-500'/></a>
+               <a href={project.link} target="_blank" rel="noreferrer" className='flex justify-center no-underline'><p className='text-blue-500 hover:text-blue-800'>Link</p><AiOutlineLink className='text-blue-500'/></a>
              </div> 
             ))}
         </div>
