@@ -1,9 +1,10 @@
-import {BsFillMoonStarsFill} from "react-icons/bs";
 import { AiFillLinkedin, AiOutlineGithub} from "react-icons/ai";
 import { useState } from 'react';
 import { Contact } from "./Contact";
 import ProjectList from "./pages/ProjectList";
 import projects from "./pages/projects";
+import Navbar from "./Components/Navbar";
+import ProfilePic from "./Components/ProfilePic";
 
 function App() {
 
@@ -13,15 +14,8 @@ function App() {
     <div className="App">
       <div className={darkMode ? 'dark bg-gray-800 px-10 md:px-20 lg:px-40 text-gray-400' : "bg-gray-200 px-10 md:px-20 lg:px-40 "}> {/*Main*/}
         {/*Nav Start*/}
-        <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-500'>Adrian Garcia Rios</h1>
-            <ul className='flex items-center'>
-              <li><BsFillMoonStarsFill className='cursor-pointer text-2xl dark:text-yellow-200' onClick={()=> setDarkMode(!darkMode)}/></li>
-              <li>
-                <a className='bg-gradient-to-r from-violet-500 to-blue-500 text-white px-4 py-2 rounded-md ml-8' href='../Resume/Resume (2).pdf' target="_blank">Resume</a>
-              </li>
-            </ul>
-        </nav> {/*Nav End*/}
+        <Navbar dark={()=> setDarkMode(!darkMode)}/>
+         {/*Nav End*/}
         <div className='text-center p-10'>
           <h2 className='text-5xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-500 font-medium'>Adrian Garcia Rios</h2>
           <h3 className='text-2xl py-2'>Front End Developer</h3>
@@ -31,8 +25,9 @@ function App() {
             <a href='https://www.linkedin.com/in/adriangarciarios/' target='_blank' rel='noreferrer'><AiFillLinkedin className='text-blue-600'/></a>
             <a href='https://github.com/ako1player' target='_blank' rel='noreferrer'><AiOutlineGithub className='text-black dark:text-gray-400'/></a>
         </div>
-        <div className='relative mx-auto bg-gradient-to-b from-blue-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
-            <img src="../images/snapchatpic-removebg-preview.png" alt="Adrian Profile"/>
+        <div className='border-1 relative mx-auto w-80 h-80 mt-5 overflow-hidden '>
+            {/* <img src="../images/snapchatpic-removebg-preview.png" alt="Adrian Profile"/> */}
+            <ProfilePic />
         </div>
         <div className="p-4">{/*Project div*/}
           <div>
