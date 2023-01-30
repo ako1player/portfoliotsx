@@ -10,6 +10,12 @@ const projects = [{
     lang: 'React | Node | Express | Firebase | MongoDB | Tailwind | Axios',
     link: 'https://quick-reviews.vercel.app/'
 },
+{
+    name: 'Soccer Card Memory Game',
+    description: 'Simple card memory game using soccer team logos. Made to practice typescript.',
+    lang: 'Typescript | Vite | CSS',
+    link: 'https://soccer-card.vercel.app/'
+},
 ]
 
 export default projects;
