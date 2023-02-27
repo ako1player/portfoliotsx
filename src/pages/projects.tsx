@@ -16,6 +16,12 @@ const projects = [{
     lang: 'Typescript | Vite | CSS',
     link: 'https://soccer-card.vercel.app/'
 },
+{
+    name: 'mySends',
+    description: 'Website to keep track of rock climbing grades done to show progress.',
+    lang: 'Typescript | Vite | CSS | Firebase | Firestore',
+    link: 'https://mysends.vercel.app/login'
+},
 ]
 
 export default projects;
