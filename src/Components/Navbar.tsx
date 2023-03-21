@@ -7,7 +7,7 @@ const Navbar = ({dark} : any) =>{
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill className='cursor-pointer text-2xl dark:text-yellow-200' onClick={dark}/></li>
               <li>
-                <a className='bg-gradient-to-r from-violet-500 to-blue-500 text-white px-4 py-2 rounded-md ml-8' href='../Resume/Resume (3).pdf' target="_blank">Resume</a>
+                <a className='bg-gradient-to-r from-violet-500 to-blue-500 text-white px-4 py-2 rounded-md ml-8' href='../Resume/Resume (4).pdf' target="_blank">Resume</a>
               </li>
             </ul>
         </nav>
