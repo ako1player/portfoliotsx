@@ -22,6 +22,12 @@ const projects = [{
     lang: 'Typescript | Vite | CSS | Firebase | Firestore',
     link: 'https://mysends.vercel.app/'
 },
+{
+    name: 'The Hub',
+    description: 'Fullstack website for sharing projects within groups.',
+    lang: 'Typescript | Vite | CSS | Firebase | Firestore',
+    link: 'https://thehubsite-c06f0.web.app/'
+},
 ]
 
 export default projects;
