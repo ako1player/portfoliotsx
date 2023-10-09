@@ -31,7 +31,7 @@ const projects = [{
     description: 'Fullstack website for sharing projects within groups.',
     lang: 'Typescript | Vite | CSS | Firebase | Firestore',
     link: 'https://thehubsite-c06f0.web.app/',
-    git: ''
+    git: 'https://github.com/ako1player/the-hub'
 },
 ]
 
