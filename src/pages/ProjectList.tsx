@@ -10,7 +10,7 @@ const ProjectList = ({projectList}: any) =>{
                <p>{project.lang}</p>
                <div className="flex flex-row justify-center">
                <a href={project.link} target="_blank" rel="noreferrer" className='flex justify-center no-underline' ><p className='text-blue-500 hover:text-blue-800'>Link</p><AiOutlineLink className='text-blue-500'/></a>
-               <a href={project.link} target="_blank" rel="noreferrer" className="flex justify-center" ><AiFillGithub className='text-blue-500' size={20}/></a>
+               <a href={project.git} target="_blank" rel="noreferrer" className="flex justify-center" ><AiFillGithub className='text-blue-500' size={20}/></a>
             </div>
             
                
