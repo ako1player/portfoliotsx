@@ -6,7 +6,7 @@ const Navbar = ({dark, toggle}:any) =>{
             <ul className='flex items-center'>
               <li>{!toggle ? <BsFillMoonStarsFill className='text-2xl cursor-pointer' onClick={dark}/> : <BsFillSunFill className='text-2xl cursor-pointer dark:text-yellow-200' onClick={dark}/> }</li>
               <li>
-                <a className='px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-violet-500 to-blue-500' href='../Resume/Resume.pdf' target="_blank">Resume</a>
+                <a className='px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-violet-500 to-blue-500' href='../Resume/resume.pdf' target="_blank">Resume</a>
               </li>
             </ul>
         </nav>
