@@ -16,12 +16,13 @@ function App() {
     <div className="App">
       <div className={darkMode ? 'dark bg-gray-800 px-10 md:px-20 lg:px-40 text-gray-400' : "bg-gray-200 px-10 md:px-20 lg:px-40 "}> {/*Main*/}
         {/*Nav Start*/}
-        <Navbar dark={()=> setDarkMode(!darkMode)}/>
+        <Navbar dark={()=> setDarkMode(!darkMode)} toggle={darkMode}/>
          {/*Nav End*/}
         <div className='p-10 text-center'>
           <h2 className='py-2 text-5xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-blue-500'>Adrian Garcia Rios</h2>
           <h3 className='py-2 text-2xl'>Front End Developer</h3>
-          <p className='py-5 leading-8 text-gray-800 text-md dark:text-gray-400'>Learning About Web Development</p>
+          <p className='py-5 leading-8 text-gray-800 dark:text-gray-400'>Learning About Web Development</p>
+          <span>Visit <a href="https://blog.adrianprojects.com/" target="_blank" rel="noreferrer" className="text-gray-800 underline dark:text-gray-400 hover:underline-offset-4">My Blog</a></span>
         </div>
         <div className='flex justify-center gap-16 py-3 text-5xl text-gray-600'>
             <a href='https://www.linkedin.com/in/adriangarciarios/' target='_blank' rel='noreferrer'><AiFillLinkedin className='text-blue-600'/></a>

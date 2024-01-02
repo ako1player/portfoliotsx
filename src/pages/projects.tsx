@@ -1,4 +1,12 @@
-const projects = [{
+const projects = [
+{
+    name: 'The Hub',
+    description: 'Fullstack website for sharing projects within groups.',
+    lang: 'Typescript | Vite | CSS | Firebase | Firestore',
+    link: 'https://thehubsite-c06f0.web.app/',
+    git: 'https://github.com/ako1player/the-hub'
+},
+{
     name: 'Zukowski Inventory',
     description: 'Website for our capstone client to store inventory online. Hosted on Vercel and Heroku.',
     lang: 'React | Node | Express | ClearDB MySQL | Tailwind | Axios',
@@ -25,13 +33,6 @@ const projects = [{
     lang: 'Typescript | Vite | CSS | Firebase | Firestore',
     link: 'https://mysends.vercel.app/',
     git: 'https://github.com/ako1player/my-sends'
-},
-{
-    name: 'The Hub',
-    description: 'Fullstack website for sharing projects within groups.',
-    lang: 'Typescript | Vite | CSS | Firebase | Firestore',
-    link: 'https://thehubsite-c06f0.web.app/',
-    git: 'https://github.com/ako1player/the-hub'
 },
 ]
 
